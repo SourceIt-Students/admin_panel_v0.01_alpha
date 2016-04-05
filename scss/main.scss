@@ -48,8 +48,7 @@ $link-hover: rgba(255, 255, 255, 1);
 a{ outline:none !important; }
 html, body{	height: 100%; }
 body{
-	background-image: url(../images/background.jpg);
-	background-attachment: fixed;
+	background: fixed url(../images/background.jpg);
 	background-size: cover;
 	color: $text-color;
 	font: $font;
@@ -275,7 +274,7 @@ body{
 	&.switch{
 		&:checked{
 			+label:before {
-				right: 0px; 
+				right: 0;
 				background: #b8e1c3;
 			}
 		}
@@ -586,7 +585,7 @@ body{
 				display: block;
 				font-size: 18px;
 				line-height: normal;
-				margin: 10px 0px 3px -1px; //hardcode !!!
+				margin: 10px 0 3px -1px; //hardcode !!!
 			}
 			small{
 				font: $font;
