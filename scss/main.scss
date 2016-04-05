@@ -1,4 +1,3 @@
-@charset "UTF-8";
 $breakpoints: (
 	'xs-phone': 320px,
 	'phone': 480px,
@@ -31,6 +30,7 @@ $btn-hover: rgba(255, 255, 255, 1);
 $link-hover: rgba(255, 255, 255, 1);
 
 // ligatured operators ≥ ≤
+@charset "UTF-8";
 @import 'vendors/include-media';
 
 @import "bootstrap-custom";
