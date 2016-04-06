@@ -29,9 +29,10 @@ $bg-block: rgba(112, 100, 93, 0.5);
 $btn-link: rgba(255, 255, 255, 0.6);
 $btn-hover: rgba(255, 255, 255, 1);
 $link-hover: rgba(255, 255, 255, 1);
-$bg-table-head: red; //Тоха вылечи переменную, в рабочем репозитории на гите ты её не добавил, WS на её отстствие ругается!
-
-
+$bg-table-head: rgba(112, 100, 93, 0.8);
+$bg-table-body: rgba(112, 100, 93, 0.6);
+$bg-table-hover: rgba(112, 100, 93, 0.4);
+$bg-drop-li: rgb(112, 100, 93);
 // ligatured operators ≥ ≤
 @import 'vendors/include-media';
 
@@ -583,50 +584,50 @@ body{
 	}
 }	
 
-#content {
+#content{ 
 	padding: 49px 0 0 254px;
 	max-width: 1369px;
 	margin: 0;
-	.hedaerPage {
+	.hedaerPage{
 		overflow: hidden;
 		margin: 0 0 15px 0;
-		.pageCaption {
+		.pageCaption{
 			float: left;
-			h1 {
+			h1{
 				margin: 0 0 7px 0;
 				padding: 0;
 				font-size: 24px;
 				line-height: 1;
 			}
-			h3 {
+			h3{
 				margin: 0 0 0 0;
 				padding: 23px 0 3px 0;
 				font-size: 16px;
 				font-weight: bold;
 			}
 		}
-		.mainFacts {
+		.mainFacts{
 			float: right;
-			overflow: hidden;
-			padding: 6px 0 0 0;
-			.monitoring {
+			overflow: hidden;	
+			padding: 6px 0 0 0;		
+			.monitoring{
 				text-align: left;
 				float: left;
 				margin: 0 0 0 90px;
-				&:first-child {
+				&:first-child{
 					margin: 0;
 				}
-				h3 {
+				h3{
 					margin: 0 0 12px 0;
 					padding: 0;
 					font-size: 16px;
 				}
-				b {
+				b{
 					font-weight: bold;
 					font-size: 36px;
 					line-height: 1;
 				}
-				small {
+				small{
 					font-size: 16px;
 					margin: 0 0 0 1px;
 					line-height: 1;
@@ -634,11 +635,11 @@ body{
 			}
 		}
 	}
-	.tableHolder {
+	.tableHolder{
 		font-size: 0;
 		margin-bottom: 66px;
 	}
-	table {
+	table{
 		width: 33.333333%;
 		display: inline-table;
 		vertical-align: top;
@@ -646,215 +647,215 @@ body{
 		border-spacing: 1px 2px;
 		padding-left: 1px;
 		font: 14px/32px $base-font-family;
-		&:first-child {
+		&:first-child{ 
 			padding-left: 0;
 		}
-		i {
+		i{
 			font-size: 28px;
 			margin-right: 15px;
 		}
-		thead {
+		thead{
 			font: 16px/61px $base-font-family;
-			td {
+			td{
 				color: $text-color;
 				padding: 2px 0 0 31px; //hardcode !!!
 			}
 		}
-		tfoot {
-			a {
+		tfoot{
+			a{
 				font: 14px/34px $base-font-family;
 				color: $text-color;
 				float: none;
 			}
-			td {
+			td{
 				padding: 0 0 3px 0;
 			}
 		}
-		tbody {
+		tbody{
 			padding-right: 16px;
-			a {
+			a{
 				float: right;
 				font-size: 12px;
 				color: $text-color;
 				margin-right: 3px;
-				&:first-child {
+				&:first-child{
 					margin-right: 0;
 				}
 			}
-			big {
+			big{
 				display: block;
 				font-size: 18px;
 				line-height: normal;
 				margin: 10px 0 3px -1px; //hardcode !!!
 			}
-			small {
+			small{
 				font: $font;
 				display: block;
 				margin-bottom: 9px;
 			}
-			.num {
+			.num{
 				padding: 0 33px 0 38px;
 				font: 36px/normal $base-font-family;
 				font-weight: bold;
 			}
 		}
-		td {
+		td{
 			color: $text-color;
 			padding: 0 10px 0 32px;
 			background: rgba(112, 100, 93, 0.7);
 		}
-		.post {
+		.post{
 			width: 100%;
 			overflow: hidden;
 			margin: 21px 0 0 -4px; //hardcode !!!
 			font: $font;
-			img {
+			img{
 				width: 50px;
 				height: 50px;
 				border-radius: 50%;
 				float: left;
 				margin: 0 22px 0 0;
 			}
-			p {
+			p{
 				margin: 0;
 				vertical-align: middle;
 				padding: 3px 16px 0 0;
 			}
-			&:first-child {
+			&:first-child{ 
 				margin-top: 24px; // hardcode !!!!
 			}
-			&:last-child {
+			&:last-child{
 				margin-bottom: 28px;
 			}
 		}
 	}
-	.informers {
+	.informers{
 		font-size: 0;
-		.post {
-			p {
+		.post{
+			p{
 				padding: 1px;
 			}
 		}
 	}
-	.alerts {
+	.alerts{
 		width: 64.9%;
 		margin-right: 1.76%;
-		span {
+		span{
 			font-size: 28px;
 			float: right;
 			padding: 25px 17px 0;
 		}
-		tbody {
-			td {
+		tbody{
+			td{
 				line-height: 80px;
 				padding: 0 10px 0 30px;
 			}
 		}
 	}
-	.name {
+	.name{
 		font: 18px/23px $base-font-family;
 	}
-	.info {
+	.info{
 		background: rgba(255, 185, 143, 0.3);
 	}
-	.success {
+	.success{
 		background: rgba(212, 255, 143, 0.3);
 	}
-	.alarm {
+	.alarm{
 		background: rgba(255, 143, 143, 0.3);
 	}
-	.sectionPage {
+	.sectionPage{
 		padding: 38px 0 0 0;
 	}
-	.box-holder {
+	.box-holder{			
 		display: inline-block;
 		vertical-align: top;
 		padding: 0 16px 30px 0;
-		&.lg {
+		&.lg{
 			width: 66.5%;
 			max-width: 738px;
 		}
-		&.sm {
+		&.sm{
 			width: 33.5%;
-			max-width: 370px;
-			padding: 0 0 30px 0;
+			max-width: 370px;	
+			padding: 0 0 30px 0;	
 		}
-		> h3 {
+		> h3{
 			margin: 0 0 2px 0;
 			padding: 23px 30px 23px 76px;
 			background: $bg-block url(../images/icon_head.png) no-repeat 30px 20px;
 			font-size: 16px;
 		}
-		.box-content {
+		.box-content{
 			background-color: $bg-block;
 			padding: 32px 30px 27px 30px;
 			min-height: 299px;
-			img {
+			img{
 				display: block;
 				height: auto;
 				// min-width: 100%;
 				// max-width: 100%;
 			}
-			.position1 {
+			.position1{
 				padding: 0 0 0 10px;
 			}
-			.position2 {
+			.position2{
 				padding: 5px 0 0 0;
 			}
-			.position3 {
+			.position3{
 				padding: 8px 0 0 0;
 			}
-		}
-		.prg-bars {
+		}		
+		.prg-bars{
 			list-style: none;
 			margin: 0;
 			padding: 9px 17px 0 17px;
-			li {
+			li{
 				padding: 0;
 				margin: 0;
 				overflow: hidden;
 			}
-			li + li {
+			li + li{
 				margin: 20px 0 0 0;
 			}
-			h3 {
+			h3{			
 				font-size: 16px;
 				line-height: 31px;
-				width: 28%;
+				width: 28%;			
 				float: left;
 				margin: 0;
-				padding: 0;
+				padding: 0;			
 			}
-			.progresbar {
+			.progresbar{				
 				width: 72%;
 				float: right;
 				padding: 1px;
 				border: 1px solid #9c918a;
 				border-radius: 2px;
 				overflow: hidden;
-				.progres {
+				.progres{								
 					float: left;
-					line-height: 1;
-					height: 27px;
-					margin: 0 10px 0 0;
-					&.orbar {
+					line-height: 1;					
+					height: 27px;	
+					margin: 0 10px 0 0;				
+					&.orbar{
 						width: 37%;
 						background-color: #dd7d4a;
 					}
-					&.yelbar {
+					&.yelbar{
 						width: 48.5%;
 						background-color: #dddb4a;
 					}
-					&.bluebar {
+					&.bluebar{
 						width: 46.1%;
 						background-color: #4aaedd;
 					}
-					&.redbar {
+					&.redbar{
 						width: 66%;
 						background-color: #dd4a4a;
 					}
 				}
-				strong {
+				strong{
 					display: block;
 					font-size: 16px;
 					margin: 0;
@@ -865,9 +866,9 @@ body{
 			}
 		}
 	}
-	form {
+	form{
 		max-width: 1089px;
-		input, textarea {
+		input, textarea{
 			background-color: transparent;
 			border: 1px solid #9c918a;
 			@include border-radius(1px);
@@ -875,43 +876,43 @@ body{
 			line-height: 23px;
 			color: #fff;
 		}
-		input[type='text'] {
+		input[type='text']{
 			width: 100%;
 			margin: 0 0 20px 0;
 			padding: 7px 15px 9px;
 
 		}
-		textarea {
+		textarea{
 			width: 100%;
 			height: 259px;
 			margin: -1px 0 21px 0;
-			padding: 15px;
+			padding: 15px;			
 		}
-		#publish-btn {
+		#publish-btn{
 			padding: 7px 26px 8px;
 			margin: 0 10px 20px 0;
 			color: $btn-link;
 		}
-		#save-btn {
+		#save-btn{
 			padding: 7px 17px 8px;
 			margin: 0 0 20px 0;
 			color: $btn-link;
 		}
-		#publish-btn:hover, #save-btn:hover {
+		#publish-btn:hover, #save-btn:hover{
 			color: $btn-hover;
 			border-color: $btn-hover;
 			@include box-shadow(inset, 0px, 5px, 4px, rgba(99, 83, 73, 1));
 		}
-		.text-edit {
+		.text-edit{
 			list-style: none;
 			margin: 0;
 			padding: 14px 29px 11px;
-			border: 1px solid #9c918a;
-			li {
+			border: 1px solid #9c918a;			
+			li{
 				display: inline-block;
 				margin: 0 12px 0 0;
 				padding: 0;
-				a {
+				a{
 					display: block;
 					width: 16px;
 					height: 16px;
@@ -919,103 +920,120 @@ body{
 					outline: none;
 					text-decoration: none;
 					opacity: 0.8;
-					&:hover {
+					&:hover{
 						text-decoration: none;
 						opacity: 1;
 					}
 				}
-				.icon-instrument2 {
+				.icon-instrument2{
 					background: url(../images/icon_instrument2.png) no-repeat 0 0;
 				}
-				.icon-instrument3 {
+				.icon-instrument3{
 					background: url(../images/icon_instrument3.png) no-repeat 0 0;
 				}
-				.icon-instrument4 {
+				.icon-instrument4{
 					background: url(../images/icon_instrument4.png) no-repeat 0 0;
 				}
-				.icon-instrument5 {
+				.icon-instrument5{
 					background: url(../images/icon_instrument5.png) no-repeat 0 0;
 				}
-				.icon-instrument6 {
+				.icon-instrument6{
 					background: url(../images/icon_instrument6.png) no-repeat 0 0;
 				}
-				.icon-instrument7 {
+				.icon-instrument7{
 					background: url(../images/icon_instrument7.png) no-repeat 0 0;
 				}
-				.icon-instrument8 {
+				.icon-instrument8{
 					background: url(../images/icon_instrument8.png) no-repeat 0 0;
 				}
-				.icon-instrument9 {
+				.icon-instrument9{
 					background: url(../images/icon_instrument9.png) no-repeat 0 0;
 				}
-				.icon-instrument10 {
+				.icon-instrument10{
 					background: url(../images/icon_instrument10.png) no-repeat 0 0;
 				}
 			}
 		}
 	}
-	.btnHolder {
+	.btnHolder{
 		width: 50%;
 		font-size: 0;
-		.btnHolderInner {
+		.btnHolderInner{
 			max-width: 20%;
 			display: inline-block;
 			padding: 47px 17px 55px;
 		}
 	}
-	.inputHolder {
-		height: 300px;
+	.inputHolder{
+	  height: 300px;
 	}
-	.section-posts {
-		.form-group {
+  .section-posts{
+		.form-group{
 			max-width: 1112px;
 			margin: 0 0 0 0;
 			padding: 0;
-			.boxLt {
-				float: left;
-				.dropdown {
+			.boxLt{
+			float: left;
+				.dropdown{
 					display: inline-block;
 					margin: 0 6px 15px 0;
-					.a-btn {
+					.dropdown-menu {
+						padding: 5px 0;
+						margin: 2px 0 0;
+						background-color: rgba(112, 100, 93, 1);
+						border: 0;
+						border-radius: 1px;
+						box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+						background-clip: padding-box;
+							a{
+								color: #b9b1ac;
+							}
+							a:hover{
+								color: #fff;
+								background-color: darken($bg-drop-li, 5%);
+							}
+					}
+					.a-btn{
 						background-color: transparent;
 						width: 195px;
 						padding: 8px 13px 8px 17px;
 						margin: 0;
 						text-align: left;
 					}
-					.title-dropdw {
+					.title-dropdw{
 						padding: 0 65px 0 0;
 					}
-					.fa {
+					.fa{
 						font-size: 24px;
 						line-height: 15px;
 						vertical-align: middle;
 					}
 				}
-				.a-btn {
+				.a-btn{
 					margin: 0 0 15px 0;
 					padding: 8px 31px;
 				}
 			}
-			.boxRt {
+			.boxRt{
 				float: right;
-				input[type=search] {
+				input[type=search]{
 					padding: 8px 13px;
 					width: 195px;
 					margin: 0 10px 15px 0;
 				}
-				.a-btn {
+				.a-btn{
 					margin: 0 0 15px 0;
 					padding: 8px 21px
 				}
 			}
 		}
-		.table-post {
+		.table-post{
 			width: 100%;
 			max-width: 1112px;
 			font: 14px/23px Arial, Helvetica Neue, Helvetica, sans-serif;
 			border-spacing: 0 1px;
 			padding: 0;
+			margin: 0 0 39px 0;
 			td {
 				padding: 5px;
 				margin: 0;
@@ -1023,50 +1041,94 @@ body{
 				vertical-align: middle;
 				height: 63px;
 			}
-			.td-choose {
+			.td-choose{
 				width: 56px;
 				text-align: right;
-				label {
+				label{
 					margin: 8px 4px 0 0;
 				}
 			}
-			.td-title {
+			.td-title{
 				width: 254px;
 			}
-			.td-author {
+			.td-author{
 				width: 132px;
 			}
-			.td-categories {
+			.td-categories{
 				width: 147px;
 			}
-			.td-tags {
+			.td-tags{
 				width: 211px;
 			}
-			.td-date {
+			.td-date{
 				width: 144px;
 			}
-			.td-views {
+			.td-views{
 				width: 125px;
 			}
-			.td-delete {
+			.td-delete{
 				width: 45px;
 			}
-			thead {
+			thead{
 				padding: 0;
 				margin: 0;
-				background-color: $bg-table-head;
 				font: 14px/23px Arial, Helvetica Neue, Helvetica, sans-serif;
+				td{
+					background-color: $bg-table-head;
+				}
 			}
-			tbody {
+			tbody{
 				padding: 0;
 				margin: 0;
-				.td-delete {
-					.fa {
-						font-size: 15px;
-						float: none;
-						&:hover, &:focus {
+				td{
+					background-color: $bg-table-body;
+				}
+				tr:hover{
+					td{
+						background-color: $bg-table-hover;
+					}
+				}
+				.td-delete{
+						.fa{
+							font-size: 15px;
+							float: none;
+						&:hover, &:focus{
 							text-decoration: none;
 						}
+					}
+				}
+			}
+		}
+		.pagination{
+			margin: 0;
+			ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				li{
+					padding: 0;
+					margin: 0;
+					float: left;
+					min-width: 34px;
+					a{
+						display: block;
+						line-height: 35px;
+						padding: 0 10px;
+						color: #fff;
+						border: 1px solid #9c918a;
+					}
+				}
+				li + li{
+					margin-left: -1px;
+				}
+				.prev{
+					a{
+						padding: 0 9px 0 13px;
+					}
+				}
+				.next{
+					a{
+						padding: 0 25px 0 25px;
 					}
 				}
 			}
