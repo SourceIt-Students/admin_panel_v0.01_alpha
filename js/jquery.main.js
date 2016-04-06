@@ -10,19 +10,14 @@ function tabs() {
 	});
 }
 
-$(function() {
-	var $console = $('#console pre');
-	
-	$('input[type=range]').nativeMultiple({
-		stylesheet: "slider",
-		onCreate: function() {
-			$console.prepend("Слайдеры созданы\n");
-		},
-		onChange: function(first_value, second_value) {
-			$console.prepend("onChange Первое значение: "+first_value+", второе значение: "+second_value+"\n");
-		},
-		onSlide: function(first_value, second_value) {
-			$console.prepend("onSlide Первое значение: "+first_value+", второе значение: "+second_value+"\n");
-		},
-	});
-});
+ $( ".slider" ).slider({
+	 value: 60,
+	 orientation: "horizontal",
+	 range: "min",
+	 animate: true
+ });
+
+ $( ".sliderRange" ).slider({
+	 range: true,
+	 values: [ 17, 67 ]
+ });

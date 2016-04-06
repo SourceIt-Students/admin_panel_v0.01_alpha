@@ -1,6 +1,6 @@
-@import url("../css/bootstrap.css");
+@import url("../css/bootstrap-extended.css");
 @import url("../css/font-awesome.css");
-@import url("../css/slider.css");
+@import url("../css/jquery-ui.css");
 .clearfix:after {
   content: '';
   display: block;
@@ -20,8 +20,7 @@ html, body {
   height: 100%; }
 
 body {
-  background-image: url(../images/background.jpg);
-  background-attachment: fixed;
+  background: fixed url(../images/background.jpg);
   background-size: cover;
   color: #fff;
   font: 14px/23px Arial, Helvetica Neue, Helvetica, sans-serif; }
@@ -116,9 +115,9 @@ body {
     border: 5px solid #9c918a;
     padding: 4px 25px; }
   .a-btn.shadow {
-    -ms-box-shadow: 0px 2px 0px 0px rgba(66, 58, 53, 0.2);
-    -o-box-shadow: 0px 2px 0px 0px rgba(66, 58, 53, 0.2);
-    box-shadow: 0px 2px 0px 0px rgba(66, 58, 53, 0.2); }
+    -ms-box-shadow: inset 0px 2px 0px 0px rgba(255, 255, 255, 0.05), 0px 2px 0px 0px rgba(66, 58, 53, 0.2);
+    -o-box-shadow: inset 0px 2px 0px 0px rgba(255, 255, 255, 0.05), 0px 2px 0px 0px rgba(66, 58, 53, 0.2);
+    box-shadow: inset 0px 2px 0px 0px rgba(255, 255, 255, 0.05), 0px 2px 0px 0px rgba(66, 58, 53, 0.2); }
   .a-btn.a-btn-danger {
     background: #936b6b; }
     .a-btn.a-btn-danger:hover {
@@ -179,7 +178,7 @@ body {
 .switch {
   display: none; }
   .switch.switch:checked + label:before {
-    right: 0px;
+    right: 0;
     background: #b8e1c3; }
   .switch.switch + label {
     position: relative;
@@ -214,6 +213,12 @@ body {
       -ms-box-shadow: 0px 2px 0px 0px rgba(66, 58, 53, 0.2);
       -o-box-shadow: 0px 2px 0px 0px rgba(66, 58, 53, 0.2);
       box-shadow: 0px 2px 0px 0px rgba(66, 58, 53, 0.2); }
+
+.slider .ui-slider-handle:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: red; }
 
 #wrapper {
   height: 100%; }
@@ -430,7 +435,7 @@ body {
         display: block;
         font-size: 18px;
         line-height: normal;
-        margin: 10px 0px 3px -1px; }
+        margin: 10px 0 3px -1px; }
       #content table tbody small {
         font: 14px/23px Arial, Helvetica Neue, Helvetica, sans-serif;
         display: block;
