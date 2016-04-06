@@ -10,12 +10,7 @@ function tabs() {
 	});
 }
 
- $( ".slider" ).slider({
-	 value: 60,
-	 orientation: "horizontal",
-	 range: "min",
-	 animate: true
- });
+ $( ".slider" ).slider();
 
  $( ".sliderRange" ).slider({
 	 range: true,
