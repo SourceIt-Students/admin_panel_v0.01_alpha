@@ -147,7 +147,8 @@
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none; }
+  -webkit-filter: none;
+          filter: none; }
 
 .fa-stack {
   position: relative;
@@ -2077,5 +2078,4 @@
 
 .fa-percent:before {
   content: ""; }
-
 /*# sourceMappingURL=font-awesome.css.map */

@@ -9,10 +9,27 @@ function tabs() {
 		$(this).parent().removeClass("active");
 	});
 }
+ $( ".sliderRangeWH" ).slider({
+     min: 0,
+     max: 100,
+     values: [ 55, 66 ],
+     range: true,
+     slide: function( event, ui ) {
+         $( ".some" ).attr("style","width: " + ui.values[ 0 ] + "%;" );
+     }
+ });
 
- $( ".slider" ).slider();
+ $( ".slider" ).slider({
+     value: 67,
+     orientation: "horizontal",
+     range: "min",
+     animate: true
+ });
 
  $( ".sliderRange" ).slider({
 	 range: true,
-	 values: [ 17, 67 ]
+	 values: [ 20, 70 ]
  });
+
+
+
