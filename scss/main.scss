@@ -315,11 +315,32 @@ body{
 //	Switch
 //------------------------------------------------------------------------------\
 
+.ui-widget-content{
+	border: 1px solid #9c918a;
+	height: 11px;
+	background: transparent;
+}
+
 //------------------------------------------------------------------------------
 //	Single Ranged slider
 //------------------------------------------------------------------------------
 .slider{
-
+	.ui-widget-header{
+		background: #b8e1c3;
+		height: auto;
+		left: 1px;
+		top: 1px;
+		bottom: 1px;
+		border-radius: 0;
+	}
+	.ui-slider-handle{
+		width: 15px;
+		height: 19px;
+		border: 0;
+		border-radius: 1px;
+		background: #9c918a;
+		@include box-shadow(inset 0px 2px 0px 0px rgba(255, 255, 255, 0.05), 0px 2px 0px 0px rgba(66, 58, 53, 0.2));
+	}
 }
 //------------------------------------------------------------------------------\
 //	Single Ranged slider
@@ -328,42 +349,66 @@ body{
 //------------------------------------------------------------------------------
 //	Double Ranged slider
 //------------------------------------------------------------------------------
-
-//------------------------------------------------------------------------------\
-//	Double Ranged slider
-//------------------------------------------------------------------------------\
-
-//------------------------------------------------------------------------------
-//	Double Ranged slider (without handler)
-//------------------------------------------------------------------------------
-
-//------------------------------------------------------------------------------\
-//	Double Ranged slider (without handler)
-//------------------------------------------------------------------------------\
-
-
-//------------------------------------------------------------------------------
-//	Single Ranged slider
-//------------------------------------------------------------------------------
-.slider{
-
+.sliderRange{
+	.ui-widget-header{
+		background: rgba(10, 10, 10, 0.5); //rgba(66, 58, 53, 0.5); для ганлядности сделал темнее
+		height: auto;
+		left: 1px;
+		top: 1px;
+		bottom: 1px;
+		border-radius: 0;
+	}
+	.ui-slider-handle{
+		width: 15px;
+		height: 19px;
+		border: 0;
+		border-radius: 1px;
+		background: #9c918a;
+		@include box-shadow(inset 0px 2px 0px 0px rgba(255, 255, 255, .05), 0px 2px 0px 0px rgba(66, 58, 53, .2));
+	}
 }
 //------------------------------------------------------------------------------\
-//	Single Ranged slider
-//------------------------------------------------------------------------------\
-
-//------------------------------------------------------------------------------
-//	Double Ranged slider
-//------------------------------------------------------------------------------
-
-//------------------------------------------------------------------------------\
 //	Double Ranged slider
 //------------------------------------------------------------------------------\
 
 //------------------------------------------------------------------------------
 //	Double Ranged slider (without handler)
 //------------------------------------------------------------------------------
-
+.sliderRangeWH{
+	.ui-widget-header{
+		background: #5c514a;
+		left: 1px;
+		top: 1px;
+		bottom: 1px;
+		border-radius: 0;
+		height: auto;
+	}
+	.some {
+		width: 55%;
+		height: auto;
+		background: #dd7d4a;
+		position: absolute;
+		left: 1px;
+		top: 1px;
+		bottom: 1px;
+		&:after{
+			height: auto;
+			width: 10px;
+			background: red;
+		}
+	}
+	.ui-slider-handle{
+		width: 1px;
+		background: #5c514a;
+		margin: 0;
+		border: 0;
+		top: 1px;
+		bottom: 1px;
+		right: 2px;
+		height: auto;
+		border-radius: 0;
+	}
+}
 //------------------------------------------------------------------------------\
 //	Double Ranged slider (without handler)
 //------------------------------------------------------------------------------\
@@ -856,7 +901,7 @@ body{
 		#publish-btn:hover, #save-btn:hover{
 			color: $btn-hover;
 			border-color: $btn-hover;
-			@include box-shadow(inset, 0px, 5px, 4px, rgba(99, 83, 73, 1));
+			@include box-shadow(inset 0px, 5px, 4px, rgba(99, 83, 73, 1));
 		}
 		.text-edit{
 			list-style: none;
