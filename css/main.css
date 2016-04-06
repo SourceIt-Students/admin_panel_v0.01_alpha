@@ -360,7 +360,7 @@ body {
   margin: 0; }
   #content .hedaerPage {
     overflow: hidden;
-    margin: 0 0 17px 0; }
+    margin: 0 0 15px 0; }
     #content .hedaerPage .pageCaption {
       float: left; }
       #content .hedaerPage .pageCaption h1 {
@@ -647,4 +647,81 @@ body {
       padding: 47px 17px 55px; }
   #content .inputHolder {
     height: 300px; }
+  #content .section-posts .form-group {
+    max-width: 1112px;
+    margin: 0 0 0 0;
+    padding: 0; }
+    #content .section-posts .form-group .boxLt {
+      float: left; }
+      #content .section-posts .form-group .boxLt .dropdown {
+        display: inline-block;
+        margin: 0 6px 15px 0; }
+        #content .section-posts .form-group .boxLt .dropdown .a-btn {
+          background-color: transparent;
+          width: 195px;
+          padding: 8px 13px 8px 17px;
+          margin: 0;
+          text-align: left; }
+        #content .section-posts .form-group .boxLt .dropdown .title-dropdw {
+          padding: 0 65px 0 0; }
+        #content .section-posts .form-group .boxLt .dropdown .fa {
+          font-size: 24px;
+          line-height: 15px;
+          vertical-align: middle; }
+      #content .section-posts .form-group .boxLt .a-btn {
+        margin: 0 0 15px 0;
+        padding: 8px 31px; }
+    #content .section-posts .form-group .boxRt {
+      float: right; }
+      #content .section-posts .form-group .boxRt input[type=search] {
+        padding: 8px 13px;
+        width: 195px;
+        margin: 0 10px 15px 0; }
+      #content .section-posts .form-group .boxRt .a-btn {
+        margin: 0 0 15px 0;
+        padding: 8px 21px; }
+  #content .section-posts .table-post {
+    width: 100%;
+    max-width: 1112px;
+    font: 14px/23px Arial, Helvetica Neue, Helvetica, sans-serif;
+    border-spacing: 0px 1px;
+    padding: 0; }
+    #content .section-posts .table-post td {
+      padding: 5px;
+      margin: 0;
+      text-align: left;
+      vertical-align: middle;
+      height: 63px; }
+    #content .section-posts .table-post .td-choose {
+      width: 56px;
+      text-align: right; }
+      #content .section-posts .table-post .td-choose label {
+        margin: 8px 4px 0 0; }
+    #content .section-posts .table-post .td-title {
+      width: 254px; }
+    #content .section-posts .table-post .td-author {
+      width: 132px; }
+    #content .section-posts .table-post .td-categories {
+      width: 147px; }
+    #content .section-posts .table-post .td-tags {
+      width: 211px; }
+    #content .section-posts .table-post .td-date {
+      width: 144px; }
+    #content .section-posts .table-post .td-views {
+      width: 125px; }
+    #content .section-posts .table-post .td-delete {
+      width: 45px; }
+    #content .section-posts .table-post thead {
+      padding: 0;
+      margin: 0;
+      background-color: #695d56;
+      font: 14px/23px Arial, Helvetica Neue, Helvetica, sans-serif; }
+    #content .section-posts .table-post tbody {
+      padding: 0;
+      margin: 0; }
+      #content .section-posts .table-post tbody .td-delete .fa {
+        font-size: 15px;
+        float: none; }
+        #content .section-posts .table-post tbody .td-delete .fa:hover, #content .section-posts .table-post tbody .td-delete .fa:focus {
+          text-decoration: none; }
 /*# sourceMappingURL=main.css.map */
