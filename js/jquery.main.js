@@ -1,5 +1,7 @@
  $(document).ready(function() {
-	tabs();
+     tabs();
+     aBtnGroup();
+     getAttr();
 });
 function tabs() {
 	$(".navAside").on("click", ".select:not(.active)", function() {
@@ -9,18 +11,27 @@ function tabs() {
 		$(this).parent().removeClass("active");
 	});
 }
+ function aBtnGroup() {
+     $(".a-btn-group").on("click", ".a-btn:not(.active)", function() {
+         $(this).addClass("active").siblings().removeClass("active");
+     });
+ }
  $( ".sliderRangeWH" ).slider({
      min: 0,
      max: 100,
-     values: [ 55, 66 ],
+     values: [ 57, 66 ],
      range: true,
      slide: function( event, ui ) {
          $( ".preRange" ).attr("style","width: " + ui.values[ 0 ] + "%;" );
      }
  });
+ function getAttr(){
+     var val =  $(".sliderRangeWH span:nth-child(3)").attr("style").replace("left","width");
+     $( ".preRange" ).attr("style",val);
+ }
 
  $( ".slider" ).slider({
-     value: 67,
+     value: 57,
      orientation: "horizontal",
      range: "min",
      animate: true
@@ -28,7 +39,7 @@ function tabs() {
 
  $( ".sliderRange" ).slider({
 	 range: true,
-	 values: [ 20, 70 ]
+	 values: [ 25, 81 ]
  });
 
 

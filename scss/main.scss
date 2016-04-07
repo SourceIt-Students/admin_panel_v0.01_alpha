@@ -60,14 +60,20 @@ body{
 //------------------------------------------------------------------------------
 .a-btn{
 	display: inline-block;
+	vertical-align: top;
+	margin: 5px 7px;
 	padding: 9px 30px;
 	border-radius: 2px;
 	font: $font;
 	color: $text-color;
-	margin-bottom: 10px;
 	cursor: pointer;
+	@include user-select(none);
 	&:hover{
 		color: $text-color;
+	}
+	&:focus{
+		color: $text-color;
+		text-decoration: none;
 	}
 	&.a-btn-orange{ 
 		background: #9c918a; // Color name: Dark grayish orange
@@ -188,15 +194,65 @@ body{
 //------------------------------------------------------------------------------\
 
 //------------------------------------------------------------------------------
+//	Button Group
+//------------------------------------------------------------------------------
+.a-btn-group{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0;
+	border: 1px solid #9c918a;
+	border-radius: 2px;
+	line-height: 0;
+	.a-btn{
+		padding: 10px 25px 9px;
+		border: 0;
+		margin: 0;
+		border-right: 1px solid #9c918a;
+		border-radius: 0;
+		&:last-child{
+			border: 0;
+		}
+		&:hover{
+			background: $bg-dark;
+		}
+	}
+	.active{
+		background: $bg-dark;
+	}
+}
+//------------------------------------------------------------------------------\
+//	Button Group
+//------------------------------------------------------------------------------\
+
+//------------------------------------------------------------------------------
+//	Input
+//------------------------------------------------------------------------------
+.input{
+	background-color: transparent;
+	border: 1px solid #9c918a;
+	border-radius: 2px;
+	font: $font;
+	color: $text-color;
+	display: inline-block;
+	vertical-align: top;
+}
+//------------------------------------------------------------------------------\
+// Input
+//------------------------------------------------------------------------------\
+
+//------------------------------------------------------------------------------
 //	Checkbox
 //------------------------------------------------------------------------------
 .checkbox {
 	display: none;
+	@include user-select(none);
 	+label {
 		cursor: pointer;
 		position: relative;
 		width: 21px;
 		height: 20px;
+		margin: 3px;
 		border: 1px solid #9c918a;
 		border-radius: 2px;
 		@include box-shadow(inset 0px 2px 0px 0px rgba(255, 255, 255, .05), 0px 2px 0px 0px rgba(66, 58, 53, .2));
@@ -233,11 +289,13 @@ body{
 //------------------------------------------------------------------------------
 .radio {
 	display: none;
+	@include user-select(none);
 	+label {
 		cursor: pointer;
 		position: relative;
 		width: 20px;
 		height: 20px;
+		margin: 1px;
 		border: 1px solid #9c918a;
 		border-radius: 50%;
 		@include box-shadow(inset 0px 2px 0px 0px rgba(255, 255, 255, .05), 0px 2px 0px 0px rgba(66, 58, 53, .2));
@@ -273,6 +331,7 @@ body{
 //	Switch
 //------------------------------------------------------------------------------
 .switch{
+	@include user-select(none);
 	display: none;
 	&.switch{
 		&:checked{
@@ -287,7 +346,8 @@ body{
 			overflow: hidden;
 			cursor: pointer;
 			width: 70px;
-			height: 28px; 
+			height: 28px;
+			margin: 8px;
 			padding: 0; 
 			border: 1px solid #9c918a; 
 			border-radius: 2px;
@@ -320,6 +380,7 @@ body{
 	border: 1px solid #9c918a;
 	height: 11px;
 	background: transparent;
+	margin: 16px 8px 20px 8px;
 }
 
 //------------------------------------------------------------------------------
@@ -377,7 +438,7 @@ body{
 //------------------------------------------------------------------------------
 .sliderRangeWH{
 	.ui-widget-header{
-		background: #5c514a;
+		background: rgba(10, 10, 10, 0.5); //rgba(66, 58, 53, 0.5); для ганлядности сделал темнее
 		left: 1px;
 		top: 1px;
 		bottom: 1px;
@@ -385,7 +446,6 @@ body{
 		height: auto;
 	}
 	.preRange{
-		width: 55%;
 		height: auto;
 		background: #dd7d4a;
 		position: absolute;
@@ -419,7 +479,10 @@ body{
 //------------------------------------------------------------------------------
 .dropdown{
 	display: inline-block;
+	vertical-align: top;
 	color: #c5c4c3;
+	margin: 10px;
+	@include user-select(none);
 	.dropdown-toggle{
 		text-decoration: none;
 		margin: 0;
@@ -498,6 +561,7 @@ body{
 			position: static;
 			float: right;
 			cursor: pointer;
+			margin: 0;
 			a{
 				margin-right: 0;
 				background: none;
@@ -572,7 +636,7 @@ body{
 			}	
 			&:hover > a{
 				border-right: 5px solid #dd7d4a;
-				color: #fff;				
+				color: $text-color;
 			}			
 		} 
 		> li.active {
@@ -825,33 +889,87 @@ body{
 		background: rgba(255, 143, 143, 0.3);
 	}
 	.sectionPage{
-		padding: 38px 0 0 0;
-		text-align: center;
+		padding-top: 17px;
 		font-size: 0;
+		&.graphs{
+			padding-top: 37px;
+		}
+	}
+	.box-inner{
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+		margin: 1px;
+		background: $bg-block;
+		&.buttons{
+			width: 60.7%;
+			padding: 42px 42px 51px;
+		}
+		&.inputs{
+			width: 38.9%;
+			padding: 42px 56px 47px;
+			font: $font;
+		}
+		&.full{
+			display: block;
+			margin: 1px;
+			padding-top: 20px;
+			.maindrop{
+				padding: 3px 39px 241px;
+				display: inline-block;
+				vertical-align: top;
+			}
+			.buttongroup{
+				padding: 13px 1px 241px;
+				display: inline-block;
+				vertical-align: top;
+			}
+			.opaquedrop{
+				padding: 3px 39px 241px;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+		.checkboxes{
+			padding: 16px 5px 0;
+			display: inline-block;
+			vertical-align: top;
+		}
+		.radioBtns{
+			padding: 19px 6px 0;
+			display: inline-block;
+			vertical-align: top;
+		}
+		.sliders{
+			padding-right: 11px;
+		}
 	}
 	.box-holder{			
 		display: inline-block;
 		vertical-align: top;
-		padding: 0 16px 30px 0;
-		text-align: left;
-		font: $font;
+		&.caption{
+			display: block;
+		}
 		&.lg{
 			min-width: 66.667%;
+			padding: 0 19px 0 0;
 		}
 		&.sm{
 			min-width: 33.333%;
 			padding: 0 0 30px 0;	
 		}
 		> h3{
-			margin: 0 0 2px 0;
+			margin: 1px;
 			padding: 23px 30px 23px 76px;
 			background: $bg-block url(../images/icon_head.png) no-repeat 30px 20px;
 			font-size: 16px;
+			text-align: left;
 		}
 		.box-content{
 			background-color: $bg-block;
-			padding: 32px 30px 27px 30px;
+			padding: 32px 30px 27px 29px;
 			min-height: 299px;
+			margin: 1px;
 			img{
 				display: block;
 				height: auto;
@@ -935,7 +1053,7 @@ body{
 			@include border-radius(1px);
 			font-size: 14px;
 			line-height: 23px;
-			color: #fff;
+			color: $text-color;
 		}
 		input[type='text']{
 			width: 100%;
@@ -1018,11 +1136,8 @@ body{
 	}
 	.btnHolder{
 		font-size: 0;
-		.btnHolderInner{
-			max-width: 20%;
-			display: inline-block;
-			padding: 47px 17px 55px;
-		}
+		max-width: 20%;
+		display: inline-block;
 	}
 	.inputHolder{
 	  height: 300px;
@@ -1031,7 +1146,7 @@ body{
 			.boxLt{
 				float: left;
 				.dropdown{
-					margin: 0 6px 15px 0;
+					margin: 0 6px 16px 0;
 					.dropdown-menu {
 						box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 					}
@@ -1052,7 +1167,7 @@ body{
 					}
 				}
 				.a-btn{
-					margin: 0 0 15px 0;
+					margin: 0 0 14px;
 					padding: 8px 31px;
 				}
 			}
@@ -1061,10 +1176,10 @@ body{
 				input[type=search]{
 					padding: 8px 13px;
 					width: 195px;
-					margin: 0 10px 15px 0;
+					margin: 0 10px 16px 0;
 				}
 				.a-btn{
-					margin: 0 0 15px 0;
+					margin: 0 0 16px 0;
 					padding: 8px 21px
 				}
 			}
@@ -1135,13 +1250,35 @@ body{
 							float: none;
 						&:hover, &:focus{
 							text-decoration: none;
+							color: #f00;
 						}
 					}
 				}
 			}
 		}
+		.feedback{
+			padding-right: 24px;
+		}
+		.textHolder{
+			width: 33.333%;
+			display: inline-block;
+			vertical-align: top;
+			margin: 20px 0 0 -4px;
+			padding-right: 30px;
+			p{
+				text-align: justify;
+			}
+			&:first-child{
+				margin-left: 0;
+			}
+			&:last-child{
+				padding: 0;
+			}
+		}
 		.pagination{
 			margin: 0;
+			border: 1px solid #9c918a;
+			border-radius: 2px;
 			ul{
 				list-style: none;
 				margin: 0;
@@ -1151,12 +1288,15 @@ body{
 					margin: 0;
 					float: left;
 					min-width: 34px;
+					border-right: 1px solid #9c918a;
+					&:last-child{
+						border: 0;
+					}
 					a{
 						display: block;
 						line-height: 35px;
 						padding: 0 10px;
-						color: #fff;
-						border: 1px solid #9c918a;
+						color: $text-color;
 					}
 				}
 				li + li{
