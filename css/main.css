@@ -31,7 +31,8 @@ body {
   border-radius: 2px;
   font: 14px/23px Arial, Helvetica Neue, Helvetica, sans-serif;
   color: #fff;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  cursor: pointer; }
   .a-btn:hover {
     color: #fff; }
   .a-btn.a-btn-orange {
@@ -287,6 +288,36 @@ body {
   height: auto;
   border-radius: 0; }
 
+.dropdown {
+  margin-top: 50px;
+  display: inline-block;
+  color: #c5c4c3; }
+  .dropdown .dropdown-toggle {
+    text-decoration: none;
+    margin: 0;
+    padding: 10px 17px 9px 19px; }
+    .dropdown .dropdown-toggle .title-drop {
+      margin-right: 57px; }
+    .dropdown .dropdown-toggle .fa {
+      font-size: 19px; }
+  .dropdown .dropdown-menu {
+    width: 100%;
+    margin: 0;
+    border-radius: 2px;
+    background: transparent;
+    border: 1px solid #9c918a;
+    padding: 0; }
+    .dropdown .dropdown-menu li {
+      border-top: 1px solid #9c918a; }
+      .dropdown .dropdown-menu li:first-child {
+        border-top: 0; }
+    .dropdown .dropdown-menu a {
+      color: #c5c4c3;
+      padding: 10px 18px; }
+      .dropdown .dropdown-menu a:hover {
+        color: #c5c4c3;
+        background: rgba(67, 58, 53, 0.5); }
+
 #wrapper {
   height: 100%; }
 
@@ -304,13 +335,15 @@ body {
     #header a:hover {
       background: rgba(28, 23, 20, 0.8); }
   #header .buttons {
-    float: left; }
+    position: fixed;
+    z-index: 1500; }
   #header .holder {
     overflow: hidden;
     font: 14px/23px Arial, Helvetica Neue, Helvetica, sans-serif;
     color: #fff;
     background: rgba(59, 54, 51, 0.6);
-    padding-right: 233px; }
+    padding-right: 233px;
+    margin-left: 204px; }
     #header .holder p {
       float: left;
       padding: 16px 51px 7px; }
@@ -350,8 +383,8 @@ body {
   width: 203px;
   margin: 1px 1px 0 0;
   padding: 0;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 56px;
   bottom: 0;
   left: 0;
   background-color: rgba(59, 54, 51, 0.6); }
@@ -556,17 +589,19 @@ body {
   #content .alarm {
     background: rgba(255, 143, 143, 0.3); }
   #content .sectionPage {
-    padding: 38px 0 0 0; }
+    padding: 38px 0 0 0;
+    text-align: center;
+    font-size: 0; }
   #content .box-holder {
     display: inline-block;
     vertical-align: top;
-    padding: 0 16px 30px 0; }
+    padding: 0 16px 30px 0;
+    text-align: left;
+    font: 14px/23px Arial, Helvetica Neue, Helvetica, sans-serif; }
     #content .box-holder.lg {
-      width: 66.5%;
-      max-width: 738px; }
+      min-width: 66.667%; }
     #content .box-holder.sm {
-      width: 33.5%;
-      max-width: 370px;
+      min-width: 33.333%;
       padding: 0 0 30px 0; }
     #content .box-holder > h3 {
       margin: 0 0 2px 0;
@@ -703,7 +738,6 @@ body {
       #content form .text-edit li .icon-instrument10 {
         background: url(../images/icon_instrument10.png) no-repeat 0 0; }
   #content .btnHolder {
-    width: 50%;
     font-size: 0; }
     #content .btnHolder .btnHolderInner {
       max-width: 20%;
