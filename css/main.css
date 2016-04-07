@@ -263,7 +263,7 @@ body {
   border-radius: 0;
   height: auto; }
 
-.sliderRangeWH .some {
+.sliderRangeWH .preRange {
   width: 55%;
   height: auto;
   background: #dd7d4a;
@@ -271,7 +271,7 @@ body {
   left: 1px;
   top: 1px;
   bottom: 1px; }
-  .sliderRangeWH .some:after {
+  .sliderRangeWH .preRange:after {
     height: auto;
     width: 10px;
     background: red; }
@@ -422,9 +422,8 @@ body {
           border: none; }
 
 #content {
-  padding: 49px 0 0 254px;
-  max-width: 1369px;
-  margin: 0; }
+  padding: 49px 233px 0 254px;
+  margin: 0 auto; }
   #content .hedaerPage {
     overflow: hidden;
     margin: 0 0 15px 0; }
@@ -635,76 +634,74 @@ body {
           padding: 0;
           line-height: 27px;
           font-weight: normal; }
-  #content form {
-    max-width: 1089px; }
-    #content form input, #content form textarea {
-      background-color: transparent;
-      border: 1px solid #9c918a;
-      border-radius: 1px;
-      font-size: 14px;
-      line-height: 23px;
-      color: #fff; }
-    #content form input[type='text'] {
-      width: 100%;
-      margin: 0 0 20px 0;
-      padding: 7px 15px 9px; }
-    #content form textarea {
-      width: 100%;
-      height: 259px;
-      margin: -1px 0 21px 0;
-      padding: 15px; }
-    #content form #publish-btn {
-      padding: 7px 26px 8px;
-      margin: 0 10px 20px 0;
-      color: rgba(255, 255, 255, 0.6); }
-    #content form #save-btn {
-      padding: 7px 17px 8px;
-      margin: 0 0 20px 0;
-      color: rgba(255, 255, 255, 0.6); }
-    #content form #publish-btn:hover, #content form #save-btn:hover {
-      color: white;
-      border-color: white;
-      -ms-box-shadow: inset 0px, 5px, 4px, #635349;
-      -o-box-shadow: inset 0px, 5px, 4px, #635349;
-      box-shadow: inset 0px, 5px, 4px, #635349; }
-    #content form .text-edit {
-      list-style: none;
-      margin: 0;
-      padding: 14px 29px 11px;
-      border: 1px solid #9c918a; }
-      #content form .text-edit li {
-        display: inline-block;
-        margin: 0 12px 0 0;
-        padding: 0; }
-        #content form .text-edit li a {
-          display: block;
-          width: 16px;
-          height: 16px;
-          background: url(../images/icon_instrument1.png) no-repeat 0 0;
-          outline: none;
+  #content form input, #content form textarea {
+    background-color: transparent;
+    border: 1px solid #9c918a;
+    border-radius: 1px;
+    font-size: 14px;
+    line-height: 23px;
+    color: #fff; }
+  #content form input[type='text'] {
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 7px 15px 9px; }
+  #content form textarea {
+    width: 100%;
+    height: 259px;
+    margin: -1px 0 21px 0;
+    padding: 15px; }
+  #content form #publish-btn {
+    padding: 7px 26px 8px;
+    margin: 0 10px 20px 0;
+    color: rgba(255, 255, 255, 0.6); }
+  #content form #save-btn {
+    padding: 7px 17px 8px;
+    margin: 0 0 20px 0;
+    color: rgba(255, 255, 255, 0.6); }
+  #content form #publish-btn:hover, #content form #save-btn:hover {
+    color: white;
+    border-color: white;
+    -ms-box-shadow: inset 0px, 5px, 4px, #635349;
+    -o-box-shadow: inset 0px, 5px, 4px, #635349;
+    box-shadow: inset 0px, 5px, 4px, #635349; }
+  #content form .text-edit {
+    list-style: none;
+    margin: 0;
+    padding: 14px 29px 11px;
+    border: 1px solid #9c918a; }
+    #content form .text-edit li {
+      display: inline-block;
+      margin: 0 12px 0 0;
+      padding: 0; }
+      #content form .text-edit li a {
+        display: block;
+        width: 16px;
+        height: 16px;
+        background: url(../images/icon_instrument1.png) no-repeat 0 0;
+        outline: none;
+        text-decoration: none;
+        opacity: 0.8; }
+        #content form .text-edit li a:hover {
           text-decoration: none;
-          opacity: 0.8; }
-          #content form .text-edit li a:hover {
-            text-decoration: none;
-            opacity: 1; }
-        #content form .text-edit li .icon-instrument2 {
-          background: url(../images/icon_instrument2.png) no-repeat 0 0; }
-        #content form .text-edit li .icon-instrument3 {
-          background: url(../images/icon_instrument3.png) no-repeat 0 0; }
-        #content form .text-edit li .icon-instrument4 {
-          background: url(../images/icon_instrument4.png) no-repeat 0 0; }
-        #content form .text-edit li .icon-instrument5 {
-          background: url(../images/icon_instrument5.png) no-repeat 0 0; }
-        #content form .text-edit li .icon-instrument6 {
-          background: url(../images/icon_instrument6.png) no-repeat 0 0; }
-        #content form .text-edit li .icon-instrument7 {
-          background: url(../images/icon_instrument7.png) no-repeat 0 0; }
-        #content form .text-edit li .icon-instrument8 {
-          background: url(../images/icon_instrument8.png) no-repeat 0 0; }
-        #content form .text-edit li .icon-instrument9 {
-          background: url(../images/icon_instrument9.png) no-repeat 0 0; }
-        #content form .text-edit li .icon-instrument10 {
-          background: url(../images/icon_instrument10.png) no-repeat 0 0; }
+          opacity: 1; }
+      #content form .text-edit li .icon-instrument2 {
+        background: url(../images/icon_instrument2.png) no-repeat 0 0; }
+      #content form .text-edit li .icon-instrument3 {
+        background: url(../images/icon_instrument3.png) no-repeat 0 0; }
+      #content form .text-edit li .icon-instrument4 {
+        background: url(../images/icon_instrument4.png) no-repeat 0 0; }
+      #content form .text-edit li .icon-instrument5 {
+        background: url(../images/icon_instrument5.png) no-repeat 0 0; }
+      #content form .text-edit li .icon-instrument6 {
+        background: url(../images/icon_instrument6.png) no-repeat 0 0; }
+      #content form .text-edit li .icon-instrument7 {
+        background: url(../images/icon_instrument7.png) no-repeat 0 0; }
+      #content form .text-edit li .icon-instrument8 {
+        background: url(../images/icon_instrument8.png) no-repeat 0 0; }
+      #content form .text-edit li .icon-instrument9 {
+        background: url(../images/icon_instrument9.png) no-repeat 0 0; }
+      #content form .text-edit li .icon-instrument10 {
+        background: url(../images/icon_instrument10.png) no-repeat 0 0; }
   #content .btnHolder {
     width: 50%;
     font-size: 0; }
@@ -715,7 +712,6 @@ body {
   #content .inputHolder {
     height: 300px; }
   #content .section-posts .form-group {
-    max-width: 1112px;
     margin: 0 0 0 0;
     padding: 0; }
     #content .section-posts .form-group .boxLt {
@@ -762,7 +758,6 @@ body {
         padding: 8px 21px; }
   #content .section-posts .table-post {
     width: 100%;
-    max-width: 1112px;
     font: 14px/23px Arial, Helvetica Neue, Helvetica, sans-serif;
     border-spacing: 0 1px;
     padding: 0;
@@ -834,7 +829,6 @@ body {
       #content .section-posts .pagination ul .next a {
         padding: 0 25px 0 25px; }
   #content .section-posts .form-group {
-    max-width: 1112px;
     margin: 0 0 0 0;
     padding: 0; }
     #content .section-posts .form-group .boxLt {

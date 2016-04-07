@@ -383,7 +383,7 @@ body{
 		border-radius: 0;
 		height: auto;
 	}
-	.some {
+	.preRange{
 		width: 55%;
 		height: auto;
 		background: #dd7d4a;
@@ -585,9 +585,8 @@ body{
 }	
 
 #content{ 
-	padding: 49px 0 0 254px;
-	max-width: 1369px;
-	margin: 0;
+	padding: 49px 233px 0 254px;
+	margin: 0 auto;
 	.hedaerPage{
 		overflow: hidden;
 		margin: 0 0 15px 0;
@@ -867,7 +866,6 @@ body{
 		}
 	}
 	form{
-		max-width: 1089px;
 		input, textarea{
 			background-color: transparent;
 			border: 1px solid #9c918a;
@@ -969,7 +967,6 @@ body{
 	}
   .section-posts{
 		.form-group{
-			max-width: 1112px;
 			margin: 0 0 0 0;
 			padding: 0;
 			.boxLt{
@@ -1029,7 +1026,6 @@ body{
 		}
 		.table-post{
 			width: 100%;
-			max-width: 1112px;
 			font: 14px/23px Arial, Helvetica Neue, Helvetica, sans-serif;
 			border-spacing: 0 1px;
 			padding: 0;
@@ -1136,7 +1132,6 @@ body{
 	}
 	.section-posts {
 		.form-group {
-			max-width: 1112px;
 			margin: 0 0 0 0;
 			padding: 0;
 			.boxLt {

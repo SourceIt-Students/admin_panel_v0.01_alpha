@@ -15,7 +15,7 @@ function tabs() {
      values: [ 55, 66 ],
      range: true,
      slide: function( event, ui ) {
-         $( ".some" ).attr("style","width: " + ui.values[ 0 ] + "%;" );
+         $( ".preRange" ).attr("style","width: " + ui.values[ 0 ] + "%;" );
      }
  });
 
