@@ -438,6 +438,9 @@ body{
 		background: transparent;
 		border: 1px solid #9c918a;
 		padding: 0;
+		&.opaque{
+			background: rgb(59, 54, 51);
+		}
 		li{
 			border-top: 1px solid #9c918a;
 			&:first-child{
@@ -447,10 +450,10 @@ body{
 		a{
 			color: #c5c4c3;
 			padding: 10px 18px;
-		&:hover{
-			color: #c5c4c3;
-			background: rgba(67, 58, 53, 0.5);
-		}
+			&:hover{
+				color: #c5c4c3;
+				background: rgba(67, 58, 53, 0.5);
+			}
 		}
 	}
 }
@@ -507,18 +510,24 @@ body{
 				background: $bg-dark;
 			}
 			.dropdown-menu{
+				min-width: 167px;
 				border: 0 none;
 				border-radius: 0;
 				box-shadow: unset;
 				left: auto;
 				margin: 0;
-				padding: 0;
+				padding: 11px 0 15px 27px;
 				right: 233px;
 				top: auto;
+				width: auto;
 				background: $bg-dark;
+				li{
+					border: 0;
+				}
 				a{
 					font: 16px/47px $base-font-family;
 					width: 100%;
+					padding: 0;
 					&:hover{
 						border-right: 5px solid #dd7d4a;
 					}
@@ -683,7 +692,7 @@ body{
 	}
 	.tableHolder{
 		font-size: 0;
-		margin-bottom: 66px;
+		margin: 51px 0 66px;
 	}
 	table{
 		width: 33.333333%;
@@ -740,9 +749,11 @@ body{
 				margin-bottom: 9px;
 			}
 			.num{
-				padding: 0 33px 0 38px;
-				font: 36px/normal $base-font-family;
 				font-weight: bold;
+				padding: 0;
+				width: 90px;
+				text-align: center;
+				font: 36px/normal $base-font-family;
 			}
 		}
 		td{
@@ -1014,29 +1025,12 @@ body{
 	  height: 300px;
 	}
   .section-posts{
-		.form-group{
-			margin: 0 0 0 0;
-			padding: 0;
 			.boxLt{
-			float: left;
+				float: left;
 				.dropdown{
-					display: inline-block;
 					margin: 0 6px 15px 0;
 					.dropdown-menu {
-						padding: 5px 0;
-						margin: 2px 0 0;
-						background-color: rgba(112, 100, 93, 1);
-						border: 0;
-						border-radius: 1px;
 						box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-						background-clip: padding-box;
-							a{
-								color: #b9b1ac;
-							}
-							a:hover{
-								color: #fff;
-								background-color: darken($bg-drop-li, 5%);
-							}
 					}
 					.a-btn{
 						background-color: transparent;
@@ -1198,5 +1192,4 @@ body{
 			}
 		}
 	}
-}
 
