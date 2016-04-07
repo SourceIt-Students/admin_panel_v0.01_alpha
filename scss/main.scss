@@ -832,14 +832,14 @@ body{
 	.box-holder{			
 		display: inline-block;
 		vertical-align: top;
-		padding: 0 16px 30px 0;
+		padding: 0 19px 30px 0;
 		text-align: left;
 		font: $font;
 		&.lg{
-			min-width: 66.667%;
+			width: 66.667%;
 		}
 		&.sm{
-			min-width: 33.333%;
+			width: 33.333%;
 			padding: 0 0 30px 0;	
 		}
 		> h3{
@@ -855,14 +855,14 @@ body{
 			img{
 				display: block;
 				height: auto;
-				// min-width: 100%;
-				// max-width: 100%;
+				min-width: 100%;
+				max-width: 100%;
 			}
 			.position1{
-				padding: 0 0 0 10px;
+				padding: 0 64px 0 10px;
 			}
 			.position2{
-				padding: 5px 0 0 0;
+				padding: 5px 18px 0 0;
 			}
 			.position3{
 				padding: 8px 0 0 0;
