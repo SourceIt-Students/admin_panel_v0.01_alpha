@@ -289,7 +289,6 @@ body {
   border-radius: 0; }
 
 .dropdown {
-  margin-top: 50px;
   display: inline-block;
   color: #c5c4c3; }
   .dropdown .dropdown-toggle {
@@ -458,10 +457,11 @@ body {
   padding: 49px 233px 0 254px;
   margin: 0 auto; }
   #content .hedaerPage {
-    overflow: hidden;
     margin: 0 0 15px 0; }
     #content .hedaerPage .pageCaption {
-      float: left; }
+      display: inline-block;
+      width: 30%;
+      margin: 0 -4px 0 0; }
       #content .hedaerPage .pageCaption h1 {
         margin: 0 0 7px 0;
         padding: 0;
@@ -473,13 +473,15 @@ body {
         font-size: 16px;
         font-weight: bold; }
     #content .hedaerPage .mainFacts {
-      float: right;
-      overflow: hidden;
-      padding: 6px 0 0 0; }
+      display: inline-block;
+      width: 70%;
+      padding: 6px 0 0 0;
+      text-align: right;
+      vertical-align: top; }
       #content .hedaerPage .mainFacts .monitoring {
         text-align: left;
-        float: left;
-        margin: 0 0 0 90px; }
+        display: inline-block;
+        margin: 0 0 0 84px; }
         #content .hedaerPage .mainFacts .monitoring:first-child {
           margin: 0; }
         #content .hedaerPage .mainFacts .monitoring h3 {
