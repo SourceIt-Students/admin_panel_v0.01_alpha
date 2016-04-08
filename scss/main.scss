@@ -524,6 +524,7 @@ body{
 //------------------------------------------------------------------------------\
 
 #wrapper{
+	min-width: 480px;
 	height: 100%;
 }
 #header{
@@ -621,6 +622,7 @@ body{
 			padding: 0 0 7px 0;
 			display: block;
 			a{
+				position: relative;
 				font: 16px/47px $base-font-family;
 				width: 100%;				
 				padding: 8px 0 16px 69px;
@@ -846,6 +848,7 @@ body{
 				margin: 0;
 				vertical-align: middle;
 				padding: 3px 16px 0 0;
+				overflow: hidden;
 			}
 			&:first-child{ 
 				margin-top: 24px; // hardcode !!!!
@@ -955,11 +958,11 @@ body{
 			display: block;
 		}
 		&.lg{
-			min-width: 66.667%;
-			padding: 0 19px 0 0;
+			min-width: 66%;
+			padding: 0 19px 30px 0;
 		}
 		&.sm{
-			min-width: 33.333%;
+			min-width: 33%;
 			padding: 0 0 30px 0;
 		}
 		> h3{
@@ -971,14 +974,15 @@ body{
 		}
 		.box-content{
 			background-color: $bg-block;
-			padding: 32px 30px 27px 29px;
+			max-height: 200px;
 			min-height: 299px;
-			margin: 1px;
+			&.stat{
+				padding: 32px 30px 27px 29px;
+			}
 			img{
 				display: block;
 				height: auto;
-				// min-width: 100%;
-				// max-width: 100%;
+				width: 89%;
 			}
 			.position1{
 				padding: 0 0 0 10px;
@@ -1352,21 +1356,9 @@ body{
 		}
 	}
 
-@media (min-width: 320px) {
 
-}
-@media (min-width: 480px) {
 
-}
-@media (min-width: 768px) {
 
-}
-@media (min-width: 1024px) {
-
-}
-@media (max-width: 1200px) { 
-
-}
 @media (max-width: 1500px) {
 	#content{
 		padding: 49px 51px 0 254px;
@@ -1388,5 +1380,181 @@ body{
 			}
 		}
 	}
+}
+@media (max-width: 1200px) {
+	#content{
+		table{
+			display: table;
+			width: 100%;
+			margin-bottom: 40px;
+		}
+		.alerts{
+			width: 100%;
+		}
+		.box-holder{
+			.box-inner{
+				display: block;
+				width: 100%;
+			}
+		}
+		.tableHolder{
+			margin-bottom: 40px;
+		}
+	}
+}
+@media (max-width: 1024px) {
+	#wrapper{
+		#content{
+			.textHolder{
+				width: 100%;
+				padding: 0;
+			}
+		}
+	}
+	#aside {
+		width: 203px;
+		.navAside{
+			li{
+				a{
+					font-size: 16px;
+					line-height: 1;
+				}
+			}
+		}
+	}
+	#header{
+		a{
+			display: inline-block;
+			margin-right: 1px;
+		}
+	}
+	#content{
+		padding: 49px 51px 0 254px;
+		.box-holder{
+			&.stat{
+				width: 100%;
+				margin-bottom: 30px;
+			}
+		}
+		.hedaerPage{
+			text-align: center;
+			.pageCaption{
+				display: block;
+				width: 100%;
+				margin-bottom: 40px;
+			}
+			.mainFacts{
+				display: block;
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+}
+@media (max-width: 790px) {
+	#header{
+		a{
+			display: block;
+			margin-bottom: 1px;
+		}
+		.holder{
+			margin-left: 68px;
+			p{
+				display: none;
+			}
+		}
+	}
+	#aside{
+		width: 67px;
+		top: 170px;
+		.navAside{
+			.inner-nav{
+				position: absolute;
+				left: 67px;
+				margin-top: -29px;
+				min-width: 167px;
+				li{
+					a{
+						font-size: 14px;
+						padding: 20px;
+					}
+				}
+			}
+			li{
+				a{
+					font-size: 0;
+					line-height: 5px;
+					padding: 8px 0 16px;
+				}
+			}
+			.icon-li1{
+				background: url(../images/icon_li1.png) no-repeat 25px 6px;
+			}
+			.icon-li2{
+				background: url(../images/icon_li2.png) no-repeat 25px 6px;
+			}
+			.icon-li3{
+				background: url(../images/icon_li3.png) no-repeat 25px 6px;
+			}
+			.icon-li4{
+				background: url(../images/icon_li4.png) no-repeat 25px 6px;
+			}
+			.icon-li5{
+				background: url(../images/icon_li5.png) no-repeat 25px 6px;
+			}
+			.icon-li6{
+				background: url(../images/icon_li6.png) no-repeat 25px 6px;
+			}
+			.icon-li7{
+				background: url(../images/icon_li7.png) no-repeat 25px 6px;
+			}
+			.icon-li8{
+				background: url(../images/icon_li8.png) no-repeat 25px 6px;
+			}
+			.icon-li9{
+				background: url(../images/icon_li9.png) no-repeat 25px 6px;
+			}
+			.icon-li10{
+				background: url(../images/icon_li10.png) no-repeat 25px 6px;
+			}
+		}
+	}
+	#content{
+		padding: 49px 51px 0 118px;
+		.alerts{
+			tbody{
+				td{
+					line-height: 32px;
+				}
+			}
+			span{
+				line-height: 32px;
+				padding: 4px 17px 0;
+			}
+		}
+		.hedaerPage{
+			text-align: center;
+			.pageCaption{
+				display: block;
+				width: 100%;
+				margin-bottom: 40px;
+			}
+			.mainFacts{
+				display: block;
+				width: 100%;
+				text-align: center;
+				.monitoring{
+					text-align: center;
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 480px) {
 
+
+}
+.animated{
+	animation-fill-mode: none;
 }
