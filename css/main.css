@@ -158,8 +158,7 @@ body {
   border-radius: 2px;
   font: 14px/23px Arial, Helvetica Neue, Helvetica, sans-serif;
   color: #fff;
-  display: inline-block;
-  vertical-align: top; }
+  display: inline-block; }
 
 .checkbox {
   display: none;
@@ -201,7 +200,6 @@ body {
     position: relative;
     width: 20px;
     height: 20px;
-    margin: 1px;
     border: 1px solid #9c918a;
     border-radius: 50%;
     -ms-box-shadow: inset 0px 2px 0px 0px rgba(255, 255, 255, 0.05), 0px 2px 0px 0px rgba(66, 58, 53, 0.2);
@@ -663,29 +661,28 @@ body {
     display: inline-block;
     vertical-align: top;
     text-align: left;
-    margin: 1px;
-    background: rgba(112, 100, 93, 0.5); }
+    background: rgba(112, 100, 93, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.1); }
     #content .box-inner.buttons {
       width: 60.7%;
-      padding: 42px 42px 51px; }
+      padding: 42px 42px 53px; }
     #content .box-inner.inputs {
-      width: 38.9%;
+      width: 39.3%;
       padding: 42px 56px 47px;
       font: 14px/23px Arial, Helvetica Neue, Helvetica, sans-serif; }
     #content .box-inner.full {
       display: block;
-      margin: 1px;
-      padding-top: 20px; }
+      padding: 19px 19px 0; }
       #content .box-inner.full .maindrop {
-        padding: 3px 39px 241px;
+        padding: 3px 20px 241px;
         display: inline-block;
         vertical-align: top; }
       #content .box-inner.full .buttongroup {
-        padding: 13px 1px 241px;
+        padding: 13px 20px 241px;
         display: inline-block;
         vertical-align: top; }
       #content .box-inner.full .opaquedrop {
-        padding: 3px 39px 241px;
+        padding: 3px 20px 241px;
         display: inline-block;
         vertical-align: top; }
     #content .box-inner .checkboxes {
@@ -701,6 +698,8 @@ body {
   #content .box-holder {
     display: inline-block;
     vertical-align: top; }
+    #content .box-holder.full {
+      width: 100%; }
     #content .box-holder.caption {
       display: block; }
     #content .box-holder.lg {
@@ -710,7 +709,7 @@ body {
       min-width: 33.333%;
       padding: 0 0 30px 0; }
     #content .box-holder > h3 {
-      margin: 1px;
+      margin: 0 0 1px 0;
       padding: 23px 30px 23px 76px;
       background: rgba(112, 100, 93, 0.5) url(../images/icon_head.png) no-repeat 30px 20px;
       font-size: 16px;
@@ -847,7 +846,7 @@ body {
         background: url(../images/icon_instrument10.png) no-repeat 0 0; }
   #content .btnHolder {
     font-size: 0;
-    max-width: 20%;
+    max-width: 115px;
     display: inline-block; }
   #content .inputHolder {
     height: 300px; }
@@ -987,4 +986,14 @@ body {
         padding: 8px 13px 8px 17px;
         margin: 0;
         text-align: left; }
+
+@media (max-width: 1500px) {
+  #content {
+    padding: 49px 51px 0 254px; }
+    #content .hedaerPage .mainFacts .monitoring {
+      margin-left: 20px; }
+  #header .holder {
+    padding-right: 51px; }
+    #header .holder .dropdown .dropdown-menu {
+      right: 51px; } }
 /*# sourceMappingURL=main.css.map */
