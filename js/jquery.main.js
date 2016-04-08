@@ -2,6 +2,7 @@
      tabs();
      aBtnGroup();
      getAttr();
+     highlightTab();
 });
 function tabs() {
 	$(".navAside").on("click", ".select:not(.active)", function() {
@@ -41,6 +42,5 @@ function tabs() {
 	 range: true,
 	 values: [ 25, 81 ]
  });
-
 
 
