@@ -1,6 +1,7 @@
 @import url("../css/bootstrap-extended.css");
 @import url("../css/font-awesome.css");
 @import url("../css/jquery-ui.css");
+@import url("../css/animate.css");
 .clearfix:after {
   content: '';
   display: block;
@@ -664,10 +665,10 @@ body {
     background: rgba(112, 100, 93, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.1); }
     #content .box-inner.buttons {
-      width: 60.7%;
+      width: 60.9%;
       padding: 42px 42px 53px; }
     #content .box-inner.inputs {
-      width: 39.3%;
+      width: 39.1%;
       padding: 42px 56px 47px;
       font: 14px/23px Arial, Helvetica Neue, Helvetica, sans-serif; }
     #content .box-inner.full {
@@ -790,7 +791,7 @@ body {
   #content form textarea {
     width: 100%;
     height: 259px;
-    margin: -1px 0 21px 0;
+    margin: -1px 0 19px 0;
     padding: 15px; }
   #content form #publish-btn {
     padding: 7px 26px 8px;
@@ -809,7 +810,7 @@ body {
   #content form .text-edit {
     list-style: none;
     margin: 0;
-    padding: 14px 29px 11px;
+    padding: 14px 29px 9px;
     border: 1px solid #9c918a; }
     #content form .text-edit li {
       display: inline-block;
@@ -847,13 +848,14 @@ body {
   #content .btnHolder {
     font-size: 0;
     max-width: 115px;
-    display: inline-block; }
+    display: inline-block;
+    margin: 0 3px 0 0; }
   #content .inputHolder {
     height: 300px; }
   #content .section-posts .boxLt {
     float: left; }
     #content .section-posts .boxLt .dropdown {
-      margin: 0 6px 16px 0; }
+      margin: 0 6px 14px 0; }
       #content .section-posts .boxLt .dropdown .dropdown-menu {
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
       #content .section-posts .boxLt .dropdown .a-btn {
@@ -868,18 +870,22 @@ body {
         font-size: 24px;
         line-height: 15px;
         vertical-align: middle; }
-    #content .section-posts .boxLt .a-btn {
+    #content .section-posts .boxLt > .a-btn {
       margin: 0 0 14px;
       padding: 8px 31px; }
+      #content .section-posts .boxLt > .a-btn:hover {
+        text-decoration: underline; }
   #content .section-posts .boxRt {
     float: right; }
     #content .section-posts .boxRt input[type=search] {
       padding: 8px 13px;
       width: 195px;
-      margin: 0 10px 16px 0; }
-    #content .section-posts .boxRt .a-btn {
-      margin: 0 0 16px 0;
+      margin: 0 10px 14px 0; }
+    #content .section-posts .boxRt > .a-btn {
+      margin: 0 0 14px 0;
       padding: 8px 21px; }
+      #content .section-posts .boxRt > .a-btn:hover {
+        text-decoration: underline; }
   #content .table-post {
     width: 100%;
     font: 14px/23px Arial, Helvetica Neue, Helvetica, sans-serif;
@@ -931,19 +937,24 @@ body {
           text-decoration: none;
           color: #f00; }
   #content .feedback {
-    padding-right: 24px; }
+    padding-right: 24px;
+    padding-top: 2px; }
   #content .textHolder {
     width: 33.333%;
     display: inline-block;
     vertical-align: top;
-    margin: 20px 0 0 -4px;
-    padding-right: 30px; }
+    margin: 32px 0 0 -4px;
+    padding-right: 20px;
+    padding-left: 20px; }
     #content .textHolder p {
       text-align: justify; }
     #content .textHolder:first-child {
-      margin-left: 0; }
+      margin-left: 0;
+      padding-right: 40px;
+      padding-left: 0; }
     #content .textHolder:last-child {
-      padding: 0; }
+      padding-right: 0;
+      padding-left: 40px; }
   #content .pagination {
     margin: 0;
     border: 1px solid #9c918a;
@@ -973,13 +984,13 @@ body {
         padding: 0 25px 0 25px; }
 
 .section-posts .form-group {
-  margin: 0 0 0 0;
-  padding: 0; }
+  margin: 0;
+  padding: 2px 0 0 0; }
   .section-posts .form-group .boxLt {
     float: left; }
     .section-posts .form-group .boxLt .dropdown {
       display: inline-block;
-      margin: 0 6px 15px 0; }
+      margin: 0 6px 14px 0; }
       .section-posts .form-group .boxLt .dropdown .a-btn {
         background-color: transparent;
         width: 195px;

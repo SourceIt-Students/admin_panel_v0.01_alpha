@@ -3,9 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Title</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-extended.css">
+    <title>Posts</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -34,19 +32,17 @@
                 <li class="select">
                     <a class="icon-li1" href="#">Dashboard</a>
                     <ul class="inner-nav">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="statistics.html">Statistics</a></li>
+                        <li><a href="shortcodes.html">Buttons</a></li>
+                        <li><a href="shortcodes2.html">Text</a></li>
                     </ul>
                 </li>
-                <li class="select">
+                <li class="select active">
                     <a  class="icon-li2" href="#">Posts</a>
                     <ul class="inner-nav">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Posts</a></li>
+                        <li><a href="newposts.html">New Posts</a></li>
                     </ul>
                 </li>
                 <li class="select">
@@ -58,7 +54,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </li>
-                <li class="select active">
+                <li class="select">
                     <a class="icon-li4" href="#">Pages</a>
                     <ul class="inner-nav">
                         <li><a href="#">About</a></li>
@@ -132,7 +128,7 @@
             </header>
             <section class="section-posts">
                 <form class="form-group clearfix" action="#" method="post">
-                    <div class="boxLt">
+                    <div class="boxLt animated fadeInRight">
                         <div class="dropdown">
                             <button class="a-btn a-btn-bordered-xs dropdown-toggle" type="button" id="MydropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                 <span class="title-dropdw">Bulk Actions</span>
@@ -146,12 +142,12 @@
                         </div>
                         <input class="a-btn a-btn-bordered-xs " type="submit" value="Apply"/>
                     </div>
-                    <div class="boxRt">
+                    <div class="boxRt animated fadeInRightBig">
                         <input type="search" placeholder="Quick Search" class="input"/>
                         <input class="a-btn a-btn-bordered-xs" type="submit" value="Add New"/>
                     </div>
                 </form>
-                <table class="table-post">
+                <table class="table-post animated fadeInUp">
                     <thead>
                         <tr>
                             <td class="td-choose">
@@ -261,7 +257,7 @@
                     </tr>
                     </tbody>
                 </table>
-                <nav class="pagination">
+                <nav class="pagination animated fadeInUpBig">
                     <ul>
                         <li class="prev"><a href="#">Previous</a></li>
                         <li><a href="#">...</a></li>
@@ -279,6 +275,7 @@
 </div>
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
 <script src="js/jquery.main.js"></script>
 </body>
 </html>

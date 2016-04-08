@@ -3,9 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Project Title</title>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/bootstrap-extended.css">
+	<title>Statistics</title>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -31,22 +29,20 @@
 		<main id="main">
 			<aside id="aside">
 				<ul class="navAside">
-					<li class="select">
+					<li class="select active">
 						<a class="icon-li1" href="#">Dashboard</a>
 						<ul class="inner-nav">
-							<li><a href="#">About</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Features</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="dashboard.html">Dashboard</a></li>
+							<li><a href="#">Statistics</a></li>
+							<li><a href="shortcodes.html">Buttons</a></li>
+							<li><a href="shortcodes2.html">Text</a></li>
 						</ul>
 					</li>
 					<li class="select">
 						<a  class="icon-li2" href="#">Posts</a>
 						<ul class="inner-nav">
-							<li><a href="#">About</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Features</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="posts.html">Posts</a></li>
+							<li><a href="newposts.html">New Posts</a></li>
 						</ul>
 					</li>
 					<li class="select">
@@ -58,7 +54,7 @@
 							<li><a href="#">Contact</a></li>
 						</ul>
 					</li>
-					<li class="select active">
+					<li class="select">
 						<a class="icon-li4" href="#">Pages</a>
 						<ul class="inner-nav">
 							<li><a href="#">About</a></li>
@@ -150,19 +146,19 @@
 					</div>
 				</header>				
 				<section class="sectionPage graphs">
-					<div class="box-holder lg">
+					<div class="box-holder lg animated fadeInRight">
 						<h3>Statistics</h3>
 						<div class="box-content">
 							<img class="position1" src="images/graph1.png" alt="">
 						</div>
 					</div>
-					<div class="box-holder sm">
+					<div class="box-holder sm animated fadeInRightBig">
 						<h3>Pie Chart</h3>
 						<div class="box-content">
 							<img class="position2" src="images/graph2.png" alt="">
 						</div>
 					</div>
-					<div class="box-holder lg">
+					<div class="box-holder lg animated fadeInUp">
 						<h3>Goals</h3>
 						<div class="box-content">
 							<ul class="prg-bars">
@@ -197,7 +193,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="box-holder sm">
+					<div class="box-holder sm animated fadeInUpBig">
 						<h3>Pie Chart</h3>
 						<div class="box-content">
 							<img class="position3" src="images/graph3.png" alt="">
@@ -209,6 +205,7 @@
 	</div>
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/jquery.main.js"></script>
 </body>
 </html>
