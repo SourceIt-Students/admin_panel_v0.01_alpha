@@ -41,4 +41,4 @@ function tabs() {
  $( ".sliderRange" ).slider({
 	 range: true,
 	 values: [ 25, 81 ]
- }); 
+ });

@@ -523,6 +523,8 @@ body {
       display: inline-block;
       width: 30%;
       margin: 0 -4px 0 0; }
+      #content .hedaerPage .pageCaption.full-width {
+        width: 100%; }
       #content .hedaerPage .pageCaption h1 {
         margin: 0 0 7px 0;
         padding: 0;
