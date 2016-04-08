@@ -235,7 +235,6 @@ body{
 	font: $font;
 	color: $text-color;
 	display: inline-block;
-	vertical-align: top;
 }
 //------------------------------------------------------------------------------\
 // Input
@@ -295,7 +294,6 @@ body{
 		position: relative;
 		width: 20px;
 		height: 20px;
-		margin: 1px;
 		border: 1px solid #9c918a;
 		border-radius: 50%;
 		@include box-shadow(inset 0px 2px 0px 0px rgba(255, 255, 255, .05), 0px 2px 0px 0px rgba(66, 58, 53, .2));
@@ -899,33 +897,32 @@ body{
 		display: inline-block;
 		vertical-align: top;
 		text-align: left;
-		margin: 1px;
 		background: $bg-block;
+		border: 1px solid rgba(0, 0, 0, 0.1);
 		&.buttons{
 			width: 60.7%;
-			padding: 42px 42px 51px;
+			padding: 42px 42px 53px;
 		}
 		&.inputs{
-			width: 38.9%;
+			width: 39.3%;
 			padding: 42px 56px 47px;
 			font: $font;
 		}
 		&.full{
 			display: block;
-			margin: 1px;
-			padding-top: 20px;
+			padding: 19px 19px 0;
 			.maindrop{
-				padding: 3px 39px 241px;
+				padding: 3px 20px 241px;
 				display: inline-block;
 				vertical-align: top;
 			}
 			.buttongroup{
-				padding: 13px 1px 241px;
+				padding: 13px 20px 241px;
 				display: inline-block;
 				vertical-align: top;
 			}
 			.opaquedrop{
-				padding: 3px 39px 241px;
+				padding: 3px 20px 241px;
 				display: inline-block;
 				vertical-align: top;
 			}
@@ -947,6 +944,9 @@ body{
 	.box-holder{			
 		display: inline-block;
 		vertical-align: top;
+		&.full{
+			width: 100%;
+		}
 		&.caption{
 			display: block;
 		}
@@ -956,10 +956,10 @@ body{
 		}
 		&.sm{
 			min-width: 33.333%;
-			padding: 0 0 30px 0;	
+			padding: 0 0 30px 0;
 		}
 		> h3{
-			margin: 1px;
+			margin: 0 0 1px 0;
 			padding: 23px 30px 23px 76px;
 			background: $bg-block url(../images/icon_head.png) no-repeat 30px 20px;
 			font-size: 16px;
@@ -1136,7 +1136,7 @@ body{
 	}
 	.btnHolder{
 		font-size: 0;
-		max-width: 20%;
+		max-width: 115px;
 		display: inline-block;
 	}
 	.inputHolder{
@@ -1336,3 +1336,41 @@ body{
 		}
 	}
 
+@media (min-width: 320px) {
+
+}
+@media (min-width: 480px) {
+
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 1024px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 1500px) {
+	#content{
+		padding: 49px 51px 0 254px;
+		.hedaerPage{
+			.mainFacts{
+				.monitoring{
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+	#header{
+		.holder{
+			padding-right: 51px;
+			.dropdown{
+				.dropdown-menu{
+					right: 51px;
+				}
+			}
+		}
+	}
+
+}
