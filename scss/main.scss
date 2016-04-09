@@ -16,7 +16,7 @@ $media-expressions: (
 	'portrait': '(orientation: portrait)',
 	'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
 	'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
-); 
+);
 
 $base-font-size: 14px;
 $base-line-height: 23px;
@@ -898,6 +898,7 @@ body{
 		font-size: 0;
 		&.graphs{
 			padding-top: 37px;
+			text-align: center;
 		}
 	}
 	.box-inner{
@@ -958,11 +959,11 @@ body{
 			display: block;
 		}
 		&.lg{
-			min-width: 66%;
+			max-width: 66.666%;
 			padding: 0 19px 30px 0;
 		}
 		&.sm{
-			min-width: 33%;
+			max-width: 33.333%;
 			padding: 0 0 30px 0;
 		}
 		> h3{
@@ -977,12 +978,13 @@ body{
 			max-height: 200px;
 			min-height: 299px;
 			&.stat{
-				padding: 32px 30px 27px 29px;
+				padding: 30px 30px 25px;
+				text-align: center;
 			}
 			img{
-				display: block;
+				display: inline-block;
 				height: auto;
-				width: 89%;
+				max-width: 100%;
 			}
 			.position1{
 				padding: 0 0 0 10px;
@@ -1280,19 +1282,9 @@ body{
 			display: inline-block;
 			vertical-align: top;
 			margin: 32px 0 0 -4px;
-			padding-right: 20px;
-			padding-left: 20px;
+			padding: 15px;
 			p{
 				text-align: justify;
-			}
-			&:first-child{
-				margin-left: 0;
-				padding-right: 40px;
-				padding-left: 0;
-			}
-			&:last-child{
-				padding-right: 0;
-				padding-left: 40px;
 			}
 		}
 		.pagination{
@@ -1383,6 +1375,17 @@ body{
 }
 @media (max-width: 1200px) {
 	#content{
+		.section-posts{
+			 .td-tags{
+				display: none;
+			}
+		}
+		.box-holder{
+			&.stat{
+				max-width: 100%;
+				padding-right: 0;
+			}
+		}
 		table{
 			display: table;
 			width: 100%;
@@ -1430,12 +1433,6 @@ body{
 	}
 	#content{
 		padding: 49px 51px 0 254px;
-		.box-holder{
-			&.stat{
-				width: 100%;
-				margin-bottom: 30px;
-			}
-		}
 		.hedaerPage{
 			text-align: center;
 			.pageCaption{
@@ -1449,9 +1446,37 @@ body{
 				text-align: center;
 			}
 		}
+		.section-posts{
+			.td-categories{
+				display: none;
+			}
+			.boxLt{
+				float: none;
+				text-align: center;
+			}
+			.boxRt{
+				float: none;
+				text-align: center;
+				input[type="search"]{
+					margin: 0 6px 14px 0;
+				}
+			}
+		}
 	}
 }
 @media (max-width: 790px) {
+	.a-btn-group{
+		.a-btn{
+			padding: 4px;
+		}
+	}
+	.dropdown{
+		.dropdown-toggle{
+			.title-drop{
+				margin-right: 0;
+			}
+		}
+	}
 	#header{
 		a{
 			display: block;
@@ -1521,6 +1546,44 @@ body{
 	}
 	#content{
 		padding: 49px 51px 0 118px;
+		.section-posts{
+			text-align: center;
+			.td-views, .td-author{
+			display: none;
+			}
+		}
+		.pagination{
+			display: inline-block;
+			ul{
+				.next{
+					a{
+						padding: 0 10px;
+						font-size: 0;
+						line-height: 0;
+						&::before{
+							content: "\f054";
+							font: normal normal normal 14px / 1 FontAwesome;
+							display: block;
+							padding: 11px 0 0 4px;
+						}
+					}
+				}
+				.prev{
+					a{
+						padding: 0 10px;
+						font-size: 0;
+						line-height: 0;
+						&::before{
+							content: "\f053";
+							font: normal normal normal 14px / 1 FontAwesome;
+							display: block;
+							padding: 11px 0 10px 1px;
+						}
+					}
+				}
+			}
+
+		}
 		.alerts{
 			tbody{
 				td{
@@ -1552,7 +1615,6 @@ body{
 	}
 }
 @media (max-width: 480px) {
-
 
 }
 .animated{

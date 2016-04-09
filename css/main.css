@@ -662,7 +662,8 @@ body {
     padding-top: 17px;
     font-size: 0; }
     #content .sectionPage.graphs {
-      padding-top: 37px; }
+      padding-top: 37px;
+      text-align: center; }
   #content .box-inner {
     display: inline-block;
     vertical-align: top;
@@ -709,10 +710,10 @@ body {
     #content .box-holder.caption {
       display: block; }
     #content .box-holder.lg {
-      min-width: 66%;
+      max-width: 66.666%;
       padding: 0 19px 30px 0; }
     #content .box-holder.sm {
-      min-width: 33%;
+      max-width: 33.333%;
       padding: 0 0 30px 0; }
     #content .box-holder > h3 {
       margin: 0 0 1px 0;
@@ -725,11 +726,12 @@ body {
       max-height: 200px;
       min-height: 299px; }
       #content .box-holder .box-content.stat {
-        padding: 32px 30px 27px 29px; }
+        padding: 30px 30px 25px;
+        text-align: center; }
       #content .box-holder .box-content img {
-        display: block;
+        display: inline-block;
         height: auto;
-        width: 89%; }
+        max-width: 100%; }
       #content .box-holder .box-content .position1 {
         padding: 0 0 0 10px; }
       #content .box-holder .box-content .position2 {
@@ -951,17 +953,9 @@ body {
     display: inline-block;
     vertical-align: top;
     margin: 32px 0 0 -4px;
-    padding-right: 20px;
-    padding-left: 20px; }
+    padding: 15px; }
     #content .textHolder p {
       text-align: justify; }
-    #content .textHolder:first-child {
-      margin-left: 0;
-      padding-right: 40px;
-      padding-left: 0; }
-    #content .textHolder:last-child {
-      padding-right: 0;
-      padding-left: 40px; }
   #content .pagination {
     margin: 0;
     border: 1px solid #9c918a;
@@ -1016,6 +1010,11 @@ body {
       right: 51px; } }
 
 @media (max-width: 1200px) {
+  #content .section-posts .td-tags {
+    display: none; }
+  #content .box-holder.stat {
+    max-width: 100%;
+    padding-right: 0; }
   #content table {
     display: table;
     width: 100%;
@@ -1042,9 +1041,6 @@ body {
     margin-right: 1px; }
   #content {
     padding: 49px 51px 0 254px; }
-    #content .box-holder.stat {
-      width: 100%;
-      margin-bottom: 30px; }
     #content .hedaerPage {
       text-align: center; }
       #content .hedaerPage .pageCaption {
@@ -1054,9 +1050,23 @@ body {
       #content .hedaerPage .mainFacts {
         display: block;
         width: 100%;
-        text-align: center; } }
+        text-align: center; }
+    #content .section-posts .td-categories {
+      display: none; }
+    #content .section-posts .boxLt {
+      float: none;
+      text-align: center; }
+    #content .section-posts .boxRt {
+      float: none;
+      text-align: center; }
+      #content .section-posts .boxRt input[type="search"] {
+        margin: 0 6px 14px 0; } }
 
 @media (max-width: 790px) {
+  .a-btn-group .a-btn {
+    padding: 4px; }
+  .dropdown .dropdown-toggle .title-drop {
+    margin-right: 0; }
   #header a {
     display: block;
     margin-bottom: 1px; }
@@ -1101,6 +1111,30 @@ body {
       background: url(../images/icon_li10.png) no-repeat 25px 6px; }
   #content {
     padding: 49px 51px 0 118px; }
+    #content .section-posts {
+      text-align: center; }
+      #content .section-posts .td-views, #content .section-posts .td-author {
+        display: none; }
+    #content .pagination {
+      display: inline-block; }
+      #content .pagination ul .next a {
+        padding: 0 10px;
+        font-size: 0;
+        line-height: 0; }
+        #content .pagination ul .next a::before {
+          content: "\f054";
+          font: normal normal normal 14px / 1 FontAwesome;
+          display: block;
+          padding: 11px 0 0 4px; }
+      #content .pagination ul .prev a {
+        padding: 0 10px;
+        font-size: 0;
+        line-height: 0; }
+        #content .pagination ul .prev a::before {
+          content: "\f053";
+          font: normal normal normal 14px / 1 FontAwesome;
+          display: block;
+          padding: 11px 0 10px 1px; }
     #content .alerts tbody td {
       line-height: 32px; }
     #content .alerts span {
